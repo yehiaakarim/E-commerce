@@ -1,0 +1,95 @@
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s, background-color 0.3s;
+  background-color: white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s, background-color 0.3s;
+  -moz-transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s, background-color 0.3s;
+  -ms-transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s, background-color 0.3s;
+  -o-transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s, background-color 0.3s;
+}
+
+
+.dark-mode.product-card {
+  background-color: #2d3748;
+  border-color: #4a5568;
+  color: #f7fafc;
+}
+
+.dark-mode .product-card h3,
+.dark-mode .product-card p {
+  color: #e2e8f0;
+}
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+
+.dark-mode.product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.dark-mode .product-card img {
+  background-color: #1a202c;
+}
+
+
+.add-to-cart-btn {
+  background-color: var(--primary) !important;
+  margin-top: 1rem !important;
+  width: 100%;
+  transition: background-color 0.2s !important;
+  -webkit-transition: background-color 0.2s !important;
+  -moz-transition: background-color 0.2s !important;
+  -ms-transition: background-color 0.2s !important;
+  -o-transition: background-color 0.2s !important;
+}
+
+.dark-mode .add-to-cart-btn {
+  background-color: var(--primary-dark) !important;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+.dark-mode .add-to-cart-btn:hover {
+  background-color: var(--primary-darker) !important;
+}
+
+
+[dir='rtl'] .product-card {
+  text-align: right;
+}
+
+[dir='rtl'] .add-to-cart-btn {
+  font-family: 'Tahoma', 'Arial', sans-serif; 
+}
