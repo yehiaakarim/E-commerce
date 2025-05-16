@@ -1,0 +1,49 @@
+.add-to-cart-btn {
+  background-color: var(--primary) !important;
+  margin-top: 1rem !important;
+  width: 100%;
+  transition: background-color 0.2s !important;
+  -webkit-transition: background-color 0.2s !important;
+  -moz-transition: background-color 0.2s !important;
+  -ms-transition: background-color 0.2s !important;
+  -o-transition: background-color 0.2s !important;
+}
+
+.dark-mode .add-to-cart-btn {
+  background-color: var(--primary-dark) !important;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+.dark-mode .add-to-cart-btn:hover {
+  background-color: var(--primary-darker) !important;
+}
+
+[dir='rtl'] .add-to-cart-btn {
+  font-family: 'Tahoma', 'Arial', sans-serif; 
+}
+
+.react-transform-wrapper {
+  cursor: zoom-in;
+}
+
+.react-transform-component {
+  will-change: transform;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zoom-controls button {
+  font-family: 'Tahoma', 'Arial', sans-serif !important;
+  font-weight: bold !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+}
+
+.react-transform-wrapper.dragging {
+  cursor: grabbing !important;
+}
+
+.react-transform-component img {
+  cursor: inherit;
+}
