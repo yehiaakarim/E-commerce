@@ -1,0 +1,141 @@
+.merge-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.merge-prompt {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #1a202c;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+
+.dark-mode .merge-prompt {
+  background: #2d3748 !important;
+  color: #f7fafc !important; 
+}
+
+.dark-mode .merge-prompt h3,
+.dark-mode .merge-prompt p {
+  color: inherit !important;
+}
+
+
+.merge-prompt h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.merge-prompt p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.merge-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.merge-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 100px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.merge-yes {
+  background-color: #4299e1;
+  color: white;
+}
+
+.merge-yes:hover {
+  background-color: #3182ce;
+}
+
+.merge-no {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.merge-no:hover {
+  background-color: #cbd5e0;
+}
+
+.dark-mode .merge-no {
+  background-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.dark-mode .merge-no:hover {
+  background-color: #718096;
+}
+
+
+[dir="rtl"] .merge-prompt {
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  text-align: right;
+}
+
+[dir="rtl"] .merge-buttons {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .merge-prompt h3 {
+  font-size: 1.3rem;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .merge-prompt p {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .merge-prompt {
+    padding: 1.5rem;
+  }
+  
+  .merge-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .merge-btn {
+    width: 100%;
+  }
+  
+  [dir="rtl"] .merge-buttons {
+    flex-direction: column;
+  }
+}
